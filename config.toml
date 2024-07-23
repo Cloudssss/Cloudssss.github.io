@@ -1,0 +1,44 @@
+base_url = "https://cloudssss.github.io"
+
+title = "风港"
+
+compile_sass = true
+
+taxonomies = [{ name = "tags" }]
+
+theme = "archie-zola"
+
+[markdown]
+highlight_code = true
+highlight_theme = "OneHalfLight"
+
+[extra]
+
+mode = "toggle"
+
+subtitle = "感觉什么都没有留下"
+
+favicon = "/icon/favicon.jpg"
+
+copyright = "Wind Haven"
+
+katex_enable = true
+
+[[extra.translations.en]]
+show_more = "Read more ⟶"
+previous_page = "← Previous"
+next_page = "Next →"
+posted_on = "on "
+posted_by = "Published by"
+read_time = "minute read"
+all_tags = "All tags"
+menus = [
+    { name = "All posts", url = "/posts", weight = 2 },
+    { name = "About", url = "/about", weight = 3 },
+    { name = "Tags", url = "/tags", weight = 4 },
+]
+
+[[extra.social]]
+icon = "github"
+name = "GitHub"
+url = "https://github.com/Cloudssss"

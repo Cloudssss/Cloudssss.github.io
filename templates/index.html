@@ -1,0 +1,11 @@
+{% extends "archie-zola/templates/index.html" %}
+
+{% block main_content %}
+    <div class="site-description">
+        {% if config.extra.subtitle %}
+            {{ config.extra.subtitle | markdown | safe }}
+        {% endif %}
+    </div>
+
+    {{ post_macros::content(page=get_page(path="about.md"), extra=config.extra) }}
+{% endblock main_content %}
