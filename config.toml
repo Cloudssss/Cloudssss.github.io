@@ -36,6 +36,7 @@ menus = [
     { name = "All posts", url = "/posts", weight = 2 },
     { name = "About", url = "/about", weight = 3 },
     { name = "Tags", url = "/tags", weight = 4 },
+    { name = "Links", url = "/links", weight = 4},
 ]
 
 [[extra.social]]
