@@ -4,42 +4,45 @@ title = "风港"
 
 compile_sass = true
 
-taxonomies = [{ name = "tags" }]
+generate_feeds = true
 
-theme = "archie-zola"
+theme = "tale-zola"
+
+taxonomies = [
+  {name = "tags", feed = true},
+]
 
 [markdown]
 highlight_code = true
-highlight_theme = "OneHalfLight"
+highlight_theme = "base16-ocean-light"
 
 [extra]
-
 mode = "toggle"
-
-subtitle = "感觉什么都没有留下"
-
 favicon = "/icon/favicon.jpg"
-
 copyright = "Wind Haven"
+katex = true
+timeformat = "%B %e, %Y"
+author = "Wind Haven"
+home_url = "/posts"
 
-katex_enable = true
+# Menu items
+[[extra.menu]]
+name = "Posts"
+url = "posts"
 
-[[extra.translations.en]]
-show_more = "Read more ⟶"
-previous_page = "← Previous"
-next_page = "Next →"
-posted_on = "on "
-posted_by = "Published by"
-read_time = "minute read"
-all_tags = "All tags"
-menus = [
-    { name = "All posts", url = "/posts", weight = 2 },
-    { name = "About", url = "/about", weight = 3 },
-    { name = "Tags", url = "/tags", weight = 4 },
-    { name = "Links", url = "/links", weight = 4},
-]
+[[extra.menu]]
+name = "Tags"
+url = "tags"
 
-[[extra.social]]
-icon = "github"
-name = "GitHub"
-url = "https://github.com/Cloudssss"
+[[extra.menu]]
+name = "About"
+url = "/"
+
+[extra.footer]
+start_year = "2024"  # start year of the site
+end_year = "2024"    # end year of the site
+info = "Made with Zola with Tala-Zola theme."
+
+
+[extra.expressions]
+home = "Posts"
