@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://cloudssss.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://cloudssss.github.io/posts/</loc>
+    </url>
+    <url>
+        <loc>https://cloudssss.github.io/posts/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://cloudssss.github.io/posts/ray-tracing-in-one-weekend-refract/</loc>
+        <lastmod>2024-09-15</lastmod>
+    </url>
+    <url>
+        <loc>https://cloudssss.github.io/tags/</loc>
+    </url>
+    <url>
+        <loc>https://cloudssss.github.io/tags/graphics/</loc>
+    </url>
+</urlset>

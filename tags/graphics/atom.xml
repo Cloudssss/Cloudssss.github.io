@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>风港 - Graphics</title>
+    <link rel="self" type="application/atom+xml" href="https://cloudssss.github.io/tags/graphics/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://cloudssss.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-09-15T00:00:00+00:00</updated>
+    <id>https://cloudssss.github.io/tags/graphics/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Ray tracing in one weekend折射公式</title>
+        <published>2024-09-15T00:00:00+00:00</published>
+        <updated>2024-09-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://cloudssss.github.io/posts/ray-tracing-in-one-weekend-refract/"/>
+        <id>https://cloudssss.github.io/posts/ray-tracing-in-one-weekend-refract/</id>
+        
+        <content type="html" xml:base="https://cloudssss.github.io/posts/ray-tracing-in-one-weekend-refract/">&lt;p&gt;本文是对Ray Tracing in One Weekend中&lt;a href=&quot;https:&#x2F;&#x2F;raytracing.github.io&#x2F;books&#x2F;RayTracingInOneWeekend.html#dielectrics&#x2F;snell&amp;#x27;slaw&quot;&gt;折射&lt;&#x2F;a&gt;一节公式的推导&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;imgs&#x2F;ray_tracing_refract.png&quot; alt=&quot;ray_tracing_refract&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;图中已知的变量已经用蓝色标出，分别是\(\eta、\eta&#x27;\)，还有一个向量\(R\)已知，标为了绿色&lt;&#x2F;p&gt;
+&lt;p&gt;图中一些向量为了方便观看用不同颜色标记了，其中\(R_{\bot}&#x27;\)和\(R_{\parallel}&#x27;\)是\(R^{&#x27;}\)的分量，分别和法线\(n\)单位向量垂直和平行，\(R\)是入射光线与\(R&#x27;\)出射光线两个向量都是单位向量，长度是1&lt;&#x2F;p&gt;
+&lt;p&gt;首先要算出来的是\(cos\theta\)的值，因为\(R\)和\(n\)是单位向量，所以很容易得出&lt;&#x2F;p&gt;
+&lt;p&gt;$$ \cos\theta = -R \cdot n$$&lt;&#x2F;p&gt;
+&lt;p&gt;之后能看出\(R\)在y轴上的投影的长度为\(R\)的长度乘上\(\cos\theta\)，而\(R\)的长度和\(n\)的长度其实是一样的，所以也等于\(n\)的长度乘上\(\cos\theta\)，可以得出\(R\)在x轴上的分量为\(R + n \cdot \cos\theta\)，而这个分量的长度也容易通过图像得知是\(\sin\theta\)，所以x轴正方向的单位向量可以算出来是&lt;&#x2F;p&gt;
+&lt;p&gt;$$\frac{R + n \cdot \cos\theta}{\sin\theta}$$&lt;&#x2F;p&gt;
+&lt;p&gt;观察图像其实可以因为\(R^{&#x27;}\)长度是1知道\(R_{\bot}^{&#x27;}\)的长度是\(\sin\theta^{&#x27;}\)&lt;&#x2F;p&gt;
+&lt;p&gt;由于斯涅尔折射定律&lt;&#x2F;p&gt;
+&lt;p&gt;$$ \sin\theta&#x27; = \frac{\eta}{\eta&#x27;} \cdot \sin\theta $$&lt;&#x2F;p&gt;
+&lt;p&gt;可以得出&lt;&#x2F;p&gt;
+&lt;p&gt;$$ R_{\bot}^{&#x27;} = \sin\theta&#x27; \cdot \frac{R + n \cdot \cos\theta}{\sin\theta} = \frac{\eta}{\eta&#x27;} \cdot (R + n \cdot \cos\theta) = \frac{\eta}{\eta&#x27;} \cdot (R + (-R \cdot n)n)$$&lt;&#x2F;p&gt;
+&lt;p&gt;因为\(R_{\parallel}&#x27;\)和\(R_{\bot}&#x27;\)是垂直的，并且是同一个单位向量的分量，可以得出\(R_{\parallel}&#x27;\)的长度为\( \sqrt{1 - |\mathbf{R&#x27;}_{\bot}|^2}\)，而\(R_{\parallel}&#x27;\)的方向和\(n\)相反，所以&lt;&#x2F;p&gt;
+&lt;p&gt;$$R_{\parallel}&#x27; = -\sqrt{1 - |\mathbf{R&#x27;}_{\bot}|^2} \cdot n$$&lt;&#x2F;p&gt;
+&lt;p&gt;\(R_{\parallel}&#x27;\)和\(R_{\bot}&#x27;\)加起来就得到\(R&#x27;\)了&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
