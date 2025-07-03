@@ -1,16 +1,10 @@
 +++
-title = "About"
-template = "about/section.html"
 +++
 
-Email: Cloudlpx@gmail.com
+# 风港
 
-Github: [Cloudssss](https://github.com/Cloudssss)
+名字来源是乔治·RR·马丁的一本小说，就叫《风港》。
 
-## 友情链接
+不过我其实在互联网上经常更换名字，只是偶尔某个名字和大家有很深的交流，就一直保持着不换
 
-[可爱的Lollipop](https://nakido.me)
-
-[可爱的胡萝卜](https://www.ykiko.me)
-
-[时光的痕迹](https://blog.emtime.top/)
+总之，以后代码相关应该就只有风港这一个名字了

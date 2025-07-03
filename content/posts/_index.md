@@ -1,5 +1,7 @@
 +++
+title = "博客"
 sort_by = "date"
-paginate_by = 5
-template = "index.html"
+template = "article_list.html"
+page_template = "article.html"
+paginate_by = 2
 +++
