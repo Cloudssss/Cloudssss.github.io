@@ -1,5 +1,5 @@
 +++
-title = "About" 
+title = "About"
 template = "about/section.html"
 +++
 
@@ -12,3 +12,5 @@ Github: [Cloudssss](https://github.com/Cloudssss)
 [可爱的Lollipop](https://nakido.me)
 
 [可爱的胡萝卜](https://www.ykiko.me)
+
+[时光的痕迹](https://blog.emtime.top/)
